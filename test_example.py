@@ -1,3 +1,3 @@
 def test_print():
-	print "Hello World"
+	print("Hello World")
 
