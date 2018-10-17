@@ -4,10 +4,24 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Insert Title Here</title>
+  <title>Webume</title>
 
 
-  <!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+body {
+  background-color: darkgreen;
+}
+
+h1 {
+  color: gold;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: white;
+}
+</style>
 
 </head>
 
@@ -22,14 +36,16 @@
   <script>
   $(window).on('load', function(){
      // change the URL to your server URL here
-     $.getJSON("http://127.0.0.1:8000/api/person/1/", function (data) {
+     $.getJSON("http://162.246.157.115:8000/api/person/1/", function (data) {
           $("#name").text(data.data.attributes.name);
           $("#about").text(data.data.attributes.about);
           $("#education").text(data.data.attributes.education);
           $("#skills").text(data.data.attributes.skills);
-          // Complete consuming the API data and updating the work and contact sections
+          $("#work").text(data.data.attributes.work);
+	  $("#contact").text(data.data.attributes.contact);
+	// Complete consuming the API data and updating the work and contact sections
           // HINT: look at the above lines, jquery documentation, see what is the object returned
-     
+	     
      
 
      });
