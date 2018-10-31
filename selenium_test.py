@@ -11,4 +11,3 @@ def test_home():
 		elem = driver.find_element_by_id(i)
 		assert elem != None
 
-test_home()
